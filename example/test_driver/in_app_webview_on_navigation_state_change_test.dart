@@ -53,15 +53,7 @@ setTimeout(function() {
 }, 100);
 """);
                     },
-                    onNavigationStateChange: (InAppWebViewController controller, String url) async {
-                      if (url.endsWith("second-push")) {
-                        setState(() {
-                          appBarTitle += " " + url;
-                        });
-                      } else {
-                        appBarTitle = url;
-                      }
-                    },
+
                   ),
                 ),
               ),
